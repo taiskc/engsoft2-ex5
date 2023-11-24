@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip3 install pytest
-      - name: Run the tests
+      - name: Test with pytest
         run: |
           pytest
   macos:
@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip3 install pytest
-      - name: Run the tests
+      - name: Test with pytest
         run: |
           pytest
   windows:
@@ -48,9 +48,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip3 install pytest
-      - name: Run the tests
-        run: |
-          python -m unittest discover
       - name: Test with pytest
         run: |
           pytest
