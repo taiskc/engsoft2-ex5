@@ -52,7 +52,6 @@ jobs:
         venv3\Scripts\Activate.ps1
         python3 -m pip install maturin numpy
         maturin develop
-        python3 -m unittest discover tests
     - name: Test with pytest
       run: |
         pytest
